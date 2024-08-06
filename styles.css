@@ -69,6 +69,17 @@ textarea {
   resize: vertical;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .radio-group {
   display: flex;
   gap: 20px;
@@ -139,7 +150,7 @@ textarea:invalid {
 footer {
   text-align: center;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 15px;
   color: hsl(187, 24%, 22%);
 }
 
