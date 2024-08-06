@@ -32,7 +32,7 @@ form,
 #success-message {
   background-color: hsl(0, 0%, 100%); /* White */
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -140,17 +140,20 @@ footer {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: hsl(187, 24%, 22%); /* Grey 900 */
+  color: hsl(187, 24%, 22%);
 }
 
 footer a {
-  color: hsl(169, 82%, 27%); /* Green 600 */
+  color: hsl(169, 82%, 27%);
   text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.3s ease;
 }
 
 footer a:hover,
 footer a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: hsl(0, 66%, 54%);
 }
 
 /* Responsive design */
