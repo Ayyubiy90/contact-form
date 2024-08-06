@@ -9,8 +9,8 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: hsl(187, 24%, 22%); /* Grey 900 */
-  background-color: hsl(148, 38%, 91%); /* Green 200 */
+  color: hsl(187, 24%, 22%);
+  background-color: hsl(148, 38%, 91%);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -30,7 +30,7 @@ main {
 /* Form styles */
 form,
 #success-message {
-  background-color: hsl(0, 0%, 100%); /* White */
+  background-color: hsl(0, 0%, 100%);
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ form,
 h1 {
   font-size: 32px;
   margin-bottom: 30px;
-  color: hsl(187, 24%, 22%); /* Grey 900 */
+  color: hsl(187, 24%, 22%);
 }
 
 .form-group {
@@ -58,7 +58,7 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid hsl(186, 15%, 59%); /* Grey 500 */
+  border: 1px solid hsl(186, 15%, 59%);
   border-radius: 5px;
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -93,8 +93,8 @@ input[type="checkbox"] {
 }
 
 button {
-  background-color: hsl(169, 82%, 27%); /* Green 600 */
-  color: hsl(0, 0%, 100%); /* White */
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
   border: none;
   padding: 12px 24px;
   font-size: 18px;
@@ -112,14 +112,14 @@ button:focus {
 
 /* Error and success styles */
 .error-message {
-  color: hsl(0, 66%, 54%); /* Red */
+  color: hsl(0, 66%, 54%);
   font-size: 14px;
   margin-top: 5px;
 }
 
 input:invalid,
 textarea:invalid {
-  border-color: hsl(0, 66%, 54%); /* Red */
+  border-color: hsl(0, 66%, 54%);
 }
 
 #success-message {
@@ -127,7 +127,7 @@ textarea:invalid {
 }
 
 #success-message h2 {
-  color: hsl(169, 82%, 27%); /* Green 600 */
+  color: hsl(169, 82%, 27%);
   margin-bottom: 10px;
 }
 
@@ -179,6 +179,6 @@ textarea:focus,
 button:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 2px solid hsl(169, 82%, 27%); /* Green 600 */
+  outline: 2px solid hsl(169, 82%, 27%);
   outline-offset: 2px;
 }
