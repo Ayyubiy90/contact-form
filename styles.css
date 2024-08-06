@@ -1,0 +1,181 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: hsl(187, 24%, 22%); /* Grey 900 */
+  background-color: hsl(148, 38%, 91%); /* Green 200 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form styles */
+form,
+#success-message {
+  background-color: hsl(0, 0%, 100%); /* White */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: hsl(187, 24%, 22%); /* Grey 900 */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid hsl(186, 15%, 59%); /* Grey 500 */
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: hsl(169, 82%, 27%); /* Green 600 */
+  color: hsl(0, 0%, 100%); /* White */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: hsl(169, 82%, 22%);
+}
+
+/* Error and success styles */
+.error-message {
+  color: hsl(0, 66%, 54%); /* Red */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: hsl(0, 66%, 54%); /* Red */
+}
+
+#success-message {
+  text-align: center;
+}
+
+#success-message h2 {
+  color: hsl(169, 82%, 27%); /* Green 600 */
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: hsl(187, 24%, 22%); /* Grey 900 */
+}
+
+footer a {
+  color: hsl(169, 82%, 27%); /* Green 600 */
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form,
+  #success-message {
+    padding: 20px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Accessibility focus styles */
+input:focus,
+textarea:focus,
+button:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 2px solid hsl(169, 82%, 27%); /* Green 600 */
+  outline-offset: 2px;
+}
